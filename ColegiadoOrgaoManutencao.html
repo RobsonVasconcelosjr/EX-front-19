@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Manutenção de Órgão Colegiado</title>
+    <!-- a) Inclusão do arquivo CSS padrão da UEPB -->
+    <link href="folha.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- a) Classe para a tag BODY -->
+<body class="FundoPaginaInterna">
+
+    <!-- Informações de Cabeçalho ajustadas em tabela para aplicar as classes -->
+    <table border="0" cellpadding="4" cellspacing="0">
+        <tr>
+            <!-- b) Classe NomeArea -->
+            <td class="NomeArea">Colegiado: UEPB</td>
+        </tr>
+        <tr>
+            <!-- c) Classe TituloDestaque2 -->
+            <td class="TituloDestaque2">Manutenção de Órgão Colegiado</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Tabela de Informações Gerais -->
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tr>
+            <!-- d) Classe tabela-titulo -->
+            <td class="tabela-titulo">Unidade</td>
+            <td>UNIVERSIDADE ESTADUAL DA PARAÍBA</td>
+        </tr>
+        <tr>
+            <!-- d) Classe tabela-titulo -->
+            <td class="tabela-titulo">Tipo Colegiado</td>
+            <td>PROJETO LIMITE DO INVISÍVEL</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Formulário do Órgão Colegiado -->
+    <form name="formColegiado">
+        <table border="1" cellpadding="6" cellspacing="0">
+            <!-- Cabeçalho do Bloco -->
+            <tr>
+                <!-- d) Classe tabela-titulo -->
+                <td colspan="4" class="tabela-titulo">Órgão Colegiado</td>
+            </tr>
+
+            <!-- Linha Nome -->
+            <tr>
+                <!-- e) Classe tabela-linha para os nomes dos campos -->
+                <td align="right" class="tabela-linha">Nome</td>
+                <td colspan="3">
+                    <!-- f) Classe itens-form para todos os campos do formulário -->
+                    <input type="text" name="nome" size="70" class="itens-form">
+                </td>
+            </tr>
+
+            <!-- Linha Sigla e Status -->
+            <tr>
+                <td align="right" class="tabela-linha">Sigla</td>
+                <td>
+                    <input type="text" name="sigla" size="15" class="itens-form">
+                </td>
+                <td align="right" class="tabela-linha">Status</td>
+                <td>
+                    <input type="text" name="status" size="15" class="itens-form">
+                </td>
+            </tr>
+
+            <!-- Linha Data Ativação e Data de Desativação -->
+            <tr>
+                <td align="right" class="tabela-linha">Data Ativação</td>
+                <td>
+                    <input type="text" name="dataAtivacao" size="15" class="itens-form">
+                </td>
+                <td align="right" class="tabela-linha">Data de Desativação</td>
+                <td>
+                    <input type="text" name="dataDesativacao" size="15" class="itens-form">
+                </td>
+            </tr>
+
+            <!-- Linha Órgão de Origem -->
+            <tr>
+                <td align="right" class="tabela-linha">Órgão de Origem</td>
+                <td colspan="3">
+                    <input type="text" name="orgaoOrigem" size="55" class="itens-form">
+                    <input type="button" value="..." class="itens-form">
+                </td>
+            </tr>
+
+            <!-- Linha Órgão Superior -->
+            <tr>
+                <td align="right" class="tabela-linha">Órgão Superior</td>
+                <td colspan="3">
+                    <input type="text" name="orgaoSuperior" size="55" class="itens-form">
+                    <input type="button" value="..." class="itens-form">
+                </td>
+            </tr>
+
+            <!-- Linha Documentação -->
+            <tr>
+                <td align="right" valign="top" class="tabela-linha">Documentação</td>
+                <td colspan="3">
+                    <textarea name="documentacao" rows="4" cols="65" class="itens-form">Campo de memo</textarea>
+                </td>
+            </tr>
+
+            <!-- Botões Salvar e Excluir -->
+            <tr>
+                <td colspan="4" align="center">
+                    <br>
+                    <input type="submit" value="Salvar" class="itens-form">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Excluir" class="itens-form">
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    <!-- Botão Retornar -->
+    <input type="button" value="Retornar" class="itens-form">
+
+</body>
+</html>
